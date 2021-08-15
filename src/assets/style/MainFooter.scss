@@ -1,0 +1,33 @@
+@import "../style/base_style/variables.scss";
+
+.main_footer{
+    padding: 40px 0;
+    background-color: $gray;
+
+
+    .supports{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        @include mobile {
+            justify-content: flex-start;
+        
+        }
+
+        .company{
+            display: flex;
+            align-items: center;
+            margin: 20px 30px;
+            img{          
+                width: 25px;
+
+            }
+            span{
+                margin-left: 10px;
+                font-size: 14px;
+                color: #fff;
+            }
+        }
+    }
+}

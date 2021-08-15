@@ -1,0 +1,43 @@
+@import "../style/base_style/variables.scss";
+
+.transactions-sec{
+    background-color: #0F1F35;
+    padding: 25px  0;
+    color: #fff;
+    h4{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .transactions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+ 
+        .viewBscscan{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.466);
+            padding: 5px;
+            font-size: 14px;
+            width: 70%;
+            margin-bottom: 10px;
+            @include mobile {
+                width: 100%;
+                font-size: 12px;
+            }
+         
+            span:first-child{
+                color: #fff;
+            }
+            span{
+                color: green;
+            }
+            a{
+                color: rgba(167, 164, 164, 0.781);
+                cursor: pointer;
+            }
+        }
+    }
+}

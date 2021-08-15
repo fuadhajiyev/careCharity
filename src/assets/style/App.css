@@ -1,0 +1,14 @@
+body{
+    background-color: #000 !important;
+}
+.primary-color{
+    color: #48D870;
+}
+
+.weCareLab{
+ color: #319eec;
+ line-height: 21px;
+}
+.weCareLab:hover{
+    color: #297fbd;
+   }
