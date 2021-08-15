@@ -1,0 +1,113 @@
+@import "../style/base_style/variables.scss";
+
+.primary-btn {
+    background: linear-gradient(to right bottom, #249BDE,
+            #48D870);
+}
+
+.mybtn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    -webkit-transition: all .2s;
+    transition: all .2s;
+    position: relative;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+}
+
+
+.bg-cover {
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(23, 24, 23, 0.8), rgba(2, 17, 12, 0.8)), url(../img/world.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+.bg-cover-content-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+}
+
+.bg-cover-content {
+    display: flex;
+    color: #a0a0a0;
+    justify-content: center;
+
+    @include mobile {
+        flex-direction: column;
+        width: 93%;
+    }
+
+}
+
+.bg-cover-logo {
+    width: 100px;
+    height: auto ;
+    margin: 0 15px;
+
+    .cover-logo {
+        width: 100%;
+        object-fit: contain;
+    }
+
+}
+.bg-cover-text{
+    width: 50%;
+}
+
+.bg-cover-text {
+    margin-top: 12px;
+    width: 500px;
+    @include mobile {
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+
+.bg-cover-info {
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    @include mobile {
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+}
+
+.bg-cover-info>div {
+    display: flex;
+    flex-direction: column;
+    color: #a0a0a0;
+    margin: 0 50px;
+
+
+    @include mobile {
+        margin: 20px;
+    }
+}
+
+.bg-cover-info>div>h6 {
+    color: #48D870;
+}
+
+.bg-cover-info>div>span {
+    color: #a0a0a0;
+}
+
+
+@include mobile {}
